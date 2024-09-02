@@ -1,0 +1,298 @@
+body {
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    background-image: url('/images/prism.png');
+}
+
+#body-container {
+    display: flex;
+    margin-left: 30%;
+}
+
+#container {
+    margin-top: 350px;
+}
+
+.players {
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+input {
+    padding: 24px;
+    border-radius: 40px;
+    border: none;
+    background: #66696d;
+    color: #e2e2e3;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 8px
+}
+
+button {
+    padding: 16px 40px;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(
+    to right,
+    rgb(43, 45, 45),
+    rgb(0, 0, 0)
+    );
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-container {
+    margin: 10px;
+}
+
+.messagebox {
+    height: 150px;
+    overflow: auto;
+    word-break: break-all;
+    border: 1px solid #ccc;
+    width: 100%;
+    pointer-events: none;
+    color: #66696d;
+    font-size: 20px;
+}
+
+.message-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-input {
+    flex: 3;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 40px;
+    border: none;
+    background: #66696d;
+    color: #e2e2e3;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+}
+
+.message-button {
+    flex: 1;
+    padding: 5px 10px;
+    border-radius: 40px;
+    border: none;
+    background-image: linear-gradient(
+    to right,
+    rgb(43, 45, 45),
+    rgb(0, 0, 0)
+    );
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(15, 50px); 
+    grid-template-rows: repeat(13, 49px);
+}
+
+#game-container {
+    margin-top: 40%;
+}
+
+#countdown-timer {
+    margin-top: 425px;
+    font-size: 40px;
+}
+
+.cell {
+    width: 50px; 
+    height: 49px;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-image: url('images/walls.png');
+    height: 49px;
+    width: 50px;
+    background-size: 773.64px 892.08px;
+    background-position: -674px -247px ;
+}
+
+.soft-wall {
+    background-image: url('images/walls.png');
+    height: 50px;
+    width: 50px;
+    background-size: 773.64px 892.08px;
+    background-position: -240px -596px ;
+}
+
+.player-name {
+    position: absolute; 
+    top: 5px; 
+    left: 15px; 
+    font-size: 50px;
+}
+
+.player-container1, .player-container2, .player-container3, .player-container4  {
+    display: flex; 
+    align-items: center; 
+}
+
+.player-info {
+    margin-right: 10px; 
+}
+
+.player-1 {
+    height: 40px; 
+    width: 40px; 
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px;
+    background-position: 0px -40px;
+}
+
+.player-2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px;
+    background-position: 0px -480px;
+}
+
+.player-3 {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px;
+    background-position: 320px -40px
+}
+
+.player-4 {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px;
+    background-position: 320px -480px;
+}
+
+.player.left {
+    transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.player.right {
+    transform: scaleX(1); /* Flip the image horizontally */
+}
+
+.bomb {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+}
+
+.bomb2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+}
+
+.usual-bomb {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+    background-position: -280px -880px;
+}
+
+.advanced-bomb {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+    background-position: -360px -880px;
+}
+
+.bombs {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+    background-position: -40px -880px;
+}
+
+.flames {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+    background-position: -120px -920px;
+}
+
+.speed {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-image: url('./images/images.png'); 
+    background-size: 640px 1040px; 
+    background-position: -80px -880px;
+}
+
+#powers-container {
+    margin-left: 5%;
+}
+
+.description {
+    font-size: 20px;
+    margin-left: 100%;
+    width: 600px;
+    padding-top: 6px;
+}
+
+.game-over {
+    color: rgb(244, 98, 98);
+}
+
+.winner {
+    color: rgb(100, 237, 100);
+}
+
