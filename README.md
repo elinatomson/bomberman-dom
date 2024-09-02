@@ -1,7 +1,11 @@
 # bomberman-dom
 
+This project has been made according to the task described [here](https://github.com/01-edu/public/tree/master/subjects/bomberman-dom).
+
 ## Project Description
-This is a bomberman alike game, where multiple players can join in and battle until one of them is the last man standing. There is also a live chat that enables players to talk to each other.
+This is a bomberman alike game, where multiple players can join in and battle until one of them is the last man standing. There is also a live chat that enables players to talk to each other. 
+
+Be aware of that in this project I was not allowed to use canvas, neither Web-GL nor another framework. For this project I had to use my own framework I did on the mini-framework [project](https://github.com/01-edu/public/tree/master/subjects/mini-framework).
 
 ### Game 
 - **Number of Players:** The game supports 2 to 4 players.
@@ -20,9 +24,5 @@ This is a bomberman alike game, where multiple players can join in and battle un
 - To build images and run the container type in your terminal: bash ./docker_build_and_run.sh
 - Then open localhost:3000 in your browser to visit the game.
 
-## For auditing
-The audit questions are [here](https://github.com/01-edu/public/tree/master/subjects/bomberman-dom/audit)
-
 ## Author
-- [@elinat](https://01.kood.tech/git/elinat)
-
+- [Elina Tomson](https://github.com/elinatomson)
